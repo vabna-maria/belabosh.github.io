@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Webpage</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f5fc; /* Very light purple background */
+            color: #333;
+        }
+        header {
+            background-color: #d8bfd8; /* Thistle purple */
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #e6e6fa; /* Lavender */
+            overflow: hidden;
+        }
+        nav a {
+            float: left;
+            display: block;
+            color: #333;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: #dda0dd; /* Plum */
+            color: black;
+        }
+        section {
+            padding: 20px;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .gallery img, .gallery video {
+            margin: 10px;
+            max-width: 30%;
+            height: auto;
+            border-radius: 8px;
+            border: 2px solid #dda0dd; /* Plum border */
+        }
+        .blog-post {
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 10px;
+            margin-bottom: 10px;
+        }
+        footer {
+            background-color: #d8bfd8; /* Thistle purple */
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+        /* Responsive Design */
+        @media screen and (max-width: 768px) {
+            .gallery img, .gallery video {
+                max-width: 45%;
+            }
+        }
+        @media screen and (max-width: 480px) {
+            nav a {
+                float: none;
+                width: 100%;
+            }
+            .gallery img, .gallery video {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to My Personal Webpage</h1>
+        <p>Sharing my journey, passions, and my beloved cat!</p>
+    </header>
+
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#travel">Travel Gallery</a>
+        <a href="#beauty">Beauty Products</a>
+        <a href="#cat">Cat Corner</a>
+        <a href="#blog">Blog</a>
+    </nav>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Welcome to my personal space on the internet! Here, I share my thoughts, experiences, and the things I love. I'm passionate about traveling, beauty products, and most importantly, my adorable cat. Join me as I navigate through life's adventures.</p>
+    </section>
+
+    <section id="travel">
+        <h2>Travel Gallery</h2>
+        <div class="gallery">
+            <!-- Replace src attributes with your images/videos -->
+            <img src="travel1.jpg" alt="Travel Photo 1">
+            <img src="travel2.jpg" alt="Travel Photo 2">
+            <video controls src="travel_video1.mp4"></video>
+        </div>
+    </section>
+
+    <section id="beauty">
+        <h2>Beauty Products</h2>
+        <p>Coming soon! Stay tuned for updates on my journey into the world of beauty products.</p>
+    </section>
+
+    <section id="cat">
+        <h2>Cat Corner</h2>
+        <div class="gallery">
+            <!-- Replace src attributes with your images/videos -->
+            <img src="cat1.jpg" alt="My Cat Photo 1">
+            <img src="cat2.jpg" alt="My Cat Photo 2">
+            <video controls src="cat_video1.mp4"></video>
+        </div>
+    </section>
+
+    <section id="blog">
+        <h2>Blog</h2>
+        <!-- Sample Blog Post -->
+        <div class="blog-post">
+            <h3>Day 1: Adventures with My Cat</h3>
+            <p><em>Posted on August 14, 2024</em></p>
+            <p>Today, my cat discovered the joy of chasing laser pointers. It was hilarious watching her pounce around the room!</p>
+        </div>
+        <!-- Add more blog posts as needed -->
+    </section>
+
+    <footer>
+        <p>&copy; 2024 My Personal Webpage</p>
+    </footer>
+
+</body>
+</html>
